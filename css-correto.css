@@ -1,76 +1,4 @@
-.ContentGridItem-module_root-3go7B{
-    display:grid;
-    grid:"preview" minmax(56.25%,auto) "content" auto/minmax(0,100%);
-    color:var(--cp-color-11);
-    position:relative;
-    width:100%;
-    height:100%;
-    z-index:1;
-}
-.ContentGridItem-module_root-3go7B.ContentGridItem-module_hasModal-3LFYT{
-    z-index:2;
-}
-.ContentGridItem-module_root-3go7B:focus-within{
-    z-index:2;
-}
-
-.ContentGridItemBackground-module_root-jutHm{
-    --radius:10px;
-    --inset:2rem;
-    --inset-right:0;
-    --offset:-1rem;
-    content:"";
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:var(--offset);
-    border-radius:var(--radius);
-    overflow:hidden;
-    z-index:-1;
-    background:var(--cp-color-16);
-    clip-path:inset(var(--inset-top,var(--inset)) var(--inset-right,var(--inset)) var(--inset-bottom,var(--inset)) var(--inset-left,var(--inset)) round var(--radius));
-    contain:strict;
-    transition:clip-path .3s ease .1s;
-}
-@media(prefers-reduced-motion:reduce){
-    .ContentGridItemBackground-module_root-jutHm{
-    transition:none;
-    }
-}
-
-.ContentGridItemBackground-module_root-jutHm.ContentGridItemBackground-module_expanded-2fH2I{
-    --inset-bottom:0;
-    --inset-left:calc(var(--inset)/2);
-}
-.organize-grid .ContentGridItemBackground-module_root-jutHm{
-    display:none;
-}
-:active>.ContentGridItemBackground-module_root-jutHm,
-:focus>.ContentGridItemBackground-module_root-jutHm,
-:hover>.ContentGridItemBackground-module_root-jutHm{
-    clip-path:inset(0 0 0 0 round var(--radius));
-    transition-delay:0s;
-}
-:focus-within>.ContentGridItemBackground-module_root-jutHm{
-    clip-path:inset(0 0 0 0 round var(--radius));
-    transition-delay:0s;
-}
-
-.ItemPreview-module_root-yTmuX{
-    opacity:.99;
-    position:relative;
-    border-radius:6px;
-    overflow:hidden;
-    display:grid;
-    align-items:stretch
-}
-
-.ContentGridItem-module_preview-3_IjN{
-    grid-area:preview;
-}
-
+/*
 .ItemPreviewIframe-module_root-34Jom{
     padding-top:56.25%;
     background:var(--cp-color-13);
@@ -104,6 +32,7 @@
     height:100%;
     object-fit:cover;
 }
+*/
 
 .ItemPreviewCover-module_root-3ZIH_{
     position:absolute;
