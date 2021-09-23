@@ -1,0 +1,230 @@
+$duration: 60;
+$numberOfDots: 30;
+$oscillations: 40;
+
+$duration2: $duration;
+$numberOfDots2: $numberOfDots;
+$oscillations2: $oscillations;
+
+$duration3: $duration;
+$numberOfDots3: $numberOfDots;
+$oscillations3: $oscillations;
+
+$duration4: $duration;
+$numberOfDots4: $numberOfDots;
+$oscillations4: $oscillations;
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.9);
+	overflow: hidden;
+  background: black;  
+}
+
+.frame2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.9);
+	overflow: hidden;
+  background: none;  
+}
+
+.frame3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.9);
+	overflow: hidden;
+  background:none;  
+}
+
+.frame4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.9);
+	overflow: hidden;
+  background: none; 
+}
+
+.dots {
+  position: relative;
+  z-index: 1;
+  top: 0px;	
+  left: 0px;
+	.dot {
+		width: 8px;
+		height: 8px;		
+		background:none;
+		border-radius: 35%;
+		margin: 5px 0;
+	}	
+}
+
+.dots2 {
+  position: relative;  
+  z-index: 1;
+  top: 0px;	
+  left: 0px;
+	.dot2 {
+		width: 8px;
+		height: 8px;		
+		background: none;
+		border-radius: 35%;
+		margin: 5px 0;
+	}	
+}  
+
+.dots3 {
+  position: relative;  
+  z-index: 1;
+  top: 0px;	
+  left: 0px;
+	.dot3 {
+		width: 8px;
+		height: 8px;		
+		background:none;
+		border-radius: 35%;
+		margin: 5px 0;
+	}	
+}
+
+.dots4 {
+  position: relative;
+  z-index: 1;
+  top: 0px;	
+	.dot4 {
+		width: 8px;
+		height: 8px;		
+		background:none;
+		border-radius: 35%;
+		margin: 5px 0;
+	}	
+}
+
+@for $i from 0 through $numberOfDots {
+	$time: $duration / ($oscillations + $numberOfDots - $i);
+	.dot-#{$i} {
+		animation: dot ($time * 1500) + ms ease-in-out infinite,  color ($duration * 1500) + ms infinite;
+	}
+}  
+
+@for $x from 0 through $numberOfDots2 {
+	$time2: $duration2 / ($oscillations2 + $numberOfDots2 - $x);
+	.dot2-#{$x} {
+		animation: dot2 ($time2 * 1500) + ms ease-in-out infinite,  
+               color ($duration2 * 1500) + ms infinite;
+	}
+}
+
+@for $i3 from 0 through $numberOfDots3 {
+	$time3: $duration3 / ($oscillations3 + $numberOfDots3 - $i3);
+	.dot3-#{$i3} {
+		animation: dot3 ($time3 * 1500) + ms ease-in-out infinite,  color ($duration3 * 1500) + ms infinite;
+	}
+}  
+
+  @for $i4 from 0 through $numberOfDots4 {
+	$time4: $duration4 / ($oscillations4 + $numberOfDots4 - $i4);
+	.dot4-#{$i4} {
+		animation: dot4 ($time4 * 1500) + ms ease-in-out infinite,  
+               color ($duration4 * 1500) + ms infinite;
+	}
+}
+
+
+@keyframes dot {
+	0%, 100% {
+		transform: translate3d(0,0,0 );		
+	}
+	50% {
+		transform: translate3d(190px,0,0);
+	}	
+}
+
+@keyframes dot2 {
+	0%, 100% {
+		transform: translate3d(190px,0,0);		
+	}
+	50% {
+		transform: translate3d(0px,0,0);
+	}	
+}
+
+@keyframes dot3 {
+	0%, 100% {
+		transform: translate3d(190px,0,0);		
+	}
+	50% {
+		transform: translate3d(380px,0,0);
+	}	
+}
+
+@keyframes dot4 {
+	0%, 100% {
+		transform: translate3d(380px,0,0);		
+	}
+	50% {
+		transform: translate3d(190px,0,0);
+	}	
+}
+  
+  
+@keyframes color {
+	0% {
+		background: #e81123;
+	}
+	10% {
+		background: #ec008c;
+	}
+	20% {
+		background: #68217a;
+	}
+	30% {
+		background: #00188f;
+	}
+	40% {
+		background: #00bcf2;
+	}
+  50% {
+		background: #00b294;
+	}
+  60% {
+		background: #009e49;
+	}
+  70% {
+		background: #bad80a;
+	}
+  80% {
+		background: #fff100;
+	}
+  90% {
+		background: #ff8c00;
+	}
+  100% {
+		background: white;
+	}
+}
