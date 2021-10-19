@@ -3,8 +3,9 @@ var input = document.getElementById("campo");
 var texto = input.value;
 console.log(texto);
 
-function enviarTexto(event){
+function submit(event){
     event.preventDefault();
+    console.log(texto);
   };
 
 
