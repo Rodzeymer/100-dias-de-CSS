@@ -1,4 +1,5 @@
-var textField = document.getElementById('txtUrl').value;
+var textField = document.getElementById('txtUrl');
+console.log(textField);
 
 
 function irpUrl(){   
