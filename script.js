@@ -7,6 +7,6 @@ console.log(irPara);
 console.log(urlDestino);
 
 function irpUrl(){   
-    irPara.innerHTML("src=('https://www.youtube.com/embed/')" + textField);
+    document.getElementById("urlDestino").src = "https://www.youtube.com/embed/" + textField;
     console.log(textField);
 }
