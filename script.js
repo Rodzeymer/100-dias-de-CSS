@@ -9,7 +9,7 @@ function enviarTexto(event){
     console.log(texto);
   };
 
-
+/*
     var destino = "https://www.youtube.com/embed/";
     console.log(destino);
 
@@ -20,3 +20,4 @@ function irpUrl(){
     console.log(destino.value);
     console.log(destino.valueOf);
 }
+*/
