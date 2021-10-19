@@ -1,10 +1,9 @@
 
-var input = document.getElementById("campo");
-var texto = input.value;
-console.log(texto);
 
 function enviarTexto(event){
     //event.preventDefault();
+    var input = document.getElementById("campo");
+    var texto = input.value;
     console.log(input);
     console.log(texto);
   };
