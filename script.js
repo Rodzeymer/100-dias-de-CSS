@@ -2,7 +2,7 @@
     var textField = document.querySelector("#txtUrl");
     var textoInput = textField.value;
     console.log(textoInput);
-/*
+
     var destino = "https://www.youtube.com/embed/";
     console.log(destino);
 
@@ -13,4 +13,3 @@ function irpUrl(){
     console.log(destino.value);
     console.log(destino.valueOf);
 }
-*/
