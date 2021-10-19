@@ -1,7 +1,7 @@
 
 
 function enviarTexto(event){
-    //event.preventDefault();
+    event.preventDefault();
     var input = document.getElementById("campo");
     var texto = input.value;
     console.log(input);
