@@ -1,5 +1,5 @@
 
-    var textField = document.getElementById('txtUrl').value;
+    var textField = JSON.stringify(document.getElementById('txtUrl').value);
     console.log(textField);
 
     var destino = "https://www.youtube.com/embed/";
