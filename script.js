@@ -1,5 +1,5 @@
 
-var input = document.querySelector("#name");
+var input = document.getElementById("name");
 var texto = input.value;
 console.log(texto);
 
