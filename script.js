@@ -1,16 +1,10 @@
+var form = document.getElementById('formulario');
+var campo = document.getElementById('campo');
 
-var input = document.querySelector("#name");
-var texto = input.value;
-console.log(texto);
+form.addEventListener('submit', function(e) {
+    // alerta o valor do campo
+    alert(campo.value);
 
-
-    var destino = "https://www.youtube.com/embed/";
-    console.log(destino);
-
-
-function irpUrl(){ 
-    var vamos = destino + textField;
-    console.log(destino);
-    console.log(destino.value);
-    console.log(destino.valueOf);
-}
+    // impede o envio do form
+    e.preventDefault();
+});
