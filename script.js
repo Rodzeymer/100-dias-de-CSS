@@ -3,6 +3,10 @@ var input = document.getElementById("campo");
 var texto = input.value;
 console.log(texto);
 
+function submitForm(event){
+    event.preventDefault();
+  };
+
 
     var destino = "https://www.youtube.com/embed/";
     console.log(destino);
