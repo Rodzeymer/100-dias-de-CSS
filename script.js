@@ -4,7 +4,7 @@ var texto = input.value;
 console.log(texto);
 
 function enviarTexto(event){
-    event.preventDefault();
+    //event.preventDefault();
     console.log(input);
     console.log(texto);
   };
