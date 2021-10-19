@@ -3,7 +3,7 @@ var input = document.getElementById("campo");
 var texto = input.value;
 console.log(texto);
 
-function submitForm(event){
+function submit(event){
     event.preventDefault();
   };
 
