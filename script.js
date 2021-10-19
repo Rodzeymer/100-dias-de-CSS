@@ -1,7 +1,8 @@
 
-    var textField = document.querySelector("#txtUrl");
-    var textoInput = textField.value;
-    console.log(textoInput);
+var input = document.querySelector("#name");
+var texto = input.value;
+console.log(texto);
+
 
     var destino = "https://www.youtube.com/embed/";
     console.log(destino);
