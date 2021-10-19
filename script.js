@@ -1,5 +1,5 @@
 
-var input = document.getElementById("name");
+var input = document.getElementById("campo");
 var texto = input.value;
 console.log(texto);
 
