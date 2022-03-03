@@ -4,7 +4,9 @@
 }
 
 img{
-    margin-left: 200px;
+    margin-left: 30%;
+    width: 80%;
+    height: auto;
 }
 
 #txtUrl{
