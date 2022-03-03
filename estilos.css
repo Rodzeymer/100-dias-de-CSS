@@ -1,11 +1,15 @@
+body{
+    background-color: black;
+}
+
 .video{
     width: 800px;
     height:600px;
 }
 
 img{
-    margin-left: 30%;
-    width: 30%;
+    margin-left: 33%;
+    width: 25%;
     height: auto;
 }
 
