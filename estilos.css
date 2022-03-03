@@ -3,6 +3,10 @@
     height:600px;
 }
 
+img{
+    margin-left: 200px;
+}
+
 #txtUrl{
     width:82%;
 }
